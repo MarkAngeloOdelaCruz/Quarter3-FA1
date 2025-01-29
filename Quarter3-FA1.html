@@ -2,44 +2,41 @@
 <html>
     <head>
         <style>
-            p {float: left;}
+            p {
+                float: left;
+            }
+            p.var {
+                margin-left: 3px;
+                margin-right: 0px;
+            }
+            #pLast {
+                margin-left: 3px;
+            }
+            h4 {
+                clear: left;
+            }
         </style>
     </head>
 
     <body>
-        <script>
-            var name = "Karen";
-            var height = 62;
-            var weight = 50;
-
-            var heightFeet = parseInt(height/ 12);
-            var heightInch = ((parseFloat(height))% 12);
-
-            var weightLbs = ((parseFloat(weight))* 2.20462);
-
-            alert("Name: "+ name+ "\nHeight: "+ heightFeet+ "\'"+ heightInch+ "\" \nWeight: "+ weightLbs+ " lbs");
-        </script>
+        <script src="item1.JS"></script>
 
         <div>
-            <p>Hello  </p>
-            <p id="fname"></p>
-            <p>  </p>
-            <p id="lname"></p>
+            <p>Hello </p>
+            <p id="fname" class="var"></p>
+            <p> </p>
+            <p id="lname" class="var"></p>
             <p>! How does it feel to be  </p>
-            <p id="age"></p>
-            <p>  years old?</p>
+            <p id="age" class="var"></p>
+            <p id="pLast"> years old?</p>
         </div>
 
-        <script>
-            var fname = prompt("Enter your first name:", "0");
-            var lname = prompt("Enter your last name", "0");
-            var birthyr = prompt("Enter your birth year:", "0");
+        <script src="item2.JS"></script>
 
-            var age = 2025 - birthyr;
+        <h4>Do you wish to share your personal information with the site?</h4>
 
-            document.getElementById("fname").innerHTML = fname;
-            document.getElementById("lname").innerHTML = lname;
-            document.getElementById("age").innerHTML = age;
-        </script>
+        <button onclick="myFunction()">Click here</button>
+
+        <script src="item3.JS"></script>
     </body>
 </html>
